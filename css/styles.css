@@ -108,6 +108,15 @@ body {
   margin-left: auto;
 }
 
+.header-link {
+  display: flex;
+  align-items: center;
+}
+.header-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 /* header logo */
 
 .logo {
@@ -178,6 +187,12 @@ body {
 .hero-section {
   background-color: var(--mainbackground);
   padding: 200px 0;
+  background-image: url(../images/background-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -215,6 +230,10 @@ body {
 }
 
 /* Benefits section  */
+
+.benefits-icon {
+  margin-bottom: 30px;
+}
 
 .benefits-section {
   padding: 94px 0;
@@ -306,6 +325,80 @@ body {
   line-height: 1.18;
   text-align: center;
   color: var(--text-color);
+  margin-bottom: 16px;
+}
+
+.icon-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.list-icon {
+  fill: #afb1b8;
+}
+
+.icon-link:hover .list-icon,
+.icon-link:focus .list-icon {
+  fill: var(--primewhite);
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  background-color: var(--accent-color);
+}
+
+/* Clients-section  */
+
+.clients-title {
+  font-family: "Roboto";
+  font-size: 36px;
+  line-height: 0.85;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-color);
+
+  padding: 94px 0 50px;
+}
+
+.clients-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+
+.clients-icon {
+  fill: #afb1b8;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
 }
 
 /* footer  */
@@ -357,6 +450,49 @@ address {
   margin-bottom: 20px;
 }
 
+.join {
+  margin-left: 70px;
+}
+
+.join-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.join-title {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 0.875;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.join-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join-link:hover,
+.join-link:focus {
+  background-color: var(--accent-color);
+}
+
+.join-icon {
+  fill: var(--primewhite);
+}
+
+.address {
+  display: flex;
+}
+
 /* PORTFOLIO.HTML  */
 
 /* Buttons section  */
@@ -387,16 +523,21 @@ address {
   color: var(--title-color);
 }
 
-.button-list button:hover {
-  color: var(--primewhite);
-  background-color: var(--accent-color);
-}
+.button-list button:hover,
 .button-list button:focus {
   color: var(--primewhite);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Projects section  */
+
+.project-item:hover,
+.project-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .projects-section {
   padding: 94px 0;
